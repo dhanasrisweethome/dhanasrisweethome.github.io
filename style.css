@@ -9,7 +9,7 @@
 
 /* ==== GLOBAL ==== */
 body {
-  background:linear-gradient(45deg,green,white,transparent,purple);
+  background:linear-gradient(45 deg,green,white,transparent,purple);
   color: #222;
   line-height: 1.6;
 }
