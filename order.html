@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Pootharekulu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section class="order-section">
+    <h2>Order Details</h2>
+
+    <p id="selected-item" style="font-weight: bold;"></p>
+
+    <form action="https://formspree.io/f/movkrkjv" method="POST">
+      
+      <!-- Hidden field to store sweet name -->
+      <input type="hidden" name="sweet" id="sweet">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="phone" placeholder="Phone Number" required>
+
+      <textarea name="address" rows="3" placeholder="Full Address" required></textarea>
+
+      <textarea name="message" rows="4" placeholder="Extra Notes (optional)"></textarea>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+
+  <script>
+    // Read the sweet item name from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const item = urlParams.get("item");
+
+    // Update page content dynamically
+    document.getElementById("selected-item").innerText = "You are ordering: " + item;
+    document.getElementById("sweet").value = item;
+  </script>
+
+</body>
+</html>
