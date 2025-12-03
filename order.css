@@ -1,0 +1,98 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Page Background */
+body {
+  background: #f9f3ea;
+  padding: 20px;
+}
+
+/* Order Section */
+.order-section {
+  max-width: 450px;
+  background: #ffffff;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.1);
+  border: 2px solid #e2c5a3;
+}
+
+/* Heading */
+.order-section h2 {
+  text-align: center;
+  font-size: 26px;
+  color: #8b3f02;
+  margin-bottom: 10px;
+}
+
+/* Selected Item Text */
+#selected-item {
+  text-align: center;
+  background: #ffe8c9;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: #7a3c00;
+  font-size: 16px;
+  border: 1px solid #ddc2a1;
+}
+
+/* Form Fields */
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1.8px solid #d0b08c;
+  font-size: 15px;
+  background: #fffaf2;
+  transition: 0.3s ease;
+}
+
+/* Input Focus */
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #a76c27;
+  background: #fff4e4;
+}
+
+/* Button */
+form button {
+  width: 100%;
+  padding: 12px;
+  background: #d97706;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Button Hover */
+form button:hover {
+  background: #b75c00;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .order-section {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  form button {
+    font-size: 16px;
+  }
+}
