@@ -84,7 +84,12 @@ form button {
 form button:hover {
   background: #b75c00;
 }
-#qu
+#qu{
+  height :2em;
+  width:2em;
+  
+  
+}
 
 /* Responsive */
 @media (max-width: 480px) {
