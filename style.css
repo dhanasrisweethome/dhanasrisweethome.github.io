@@ -114,6 +114,15 @@ nav {
 }
 
 /* ==== SERVICES ==== */
+/* Specials Section Image Fix */
+.services .box img {
+  width: 100%;
+  height: 180px;          /* You can change this to any height you want */
+  object-fit: cover;      /* Makes image crop perfectly without stretching */
+  border-radius: 10px;    /* Optional – smooth corners */
+  margin-top: 10px;
+}
+
 .services {
   background: #fffdf3;
   padding: 80px 10%;
