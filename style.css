@@ -10,13 +10,13 @@
 /* ==== GLOBAL ==== */
 body {
   background:linear-gradient(45 deg,green,white,transparent,purple);
-  color: #222;
+  color: goldenrod;
   line-height: 1.6;
 }
 
 h2 {
   font-size: 2rem;
-  color: #f5b400;
+  color: aqua;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
