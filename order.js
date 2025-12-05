@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const prices = {
-    "Jaggery Pootharekulu": 15,
-    "Sugar Pootharekulu": 10,
-    "Dry Fruit Pootharekulu": 25
+    "Jaggery Pootharekulu": 160,
+    "Sugar Pootharekulu": 150,
+    "Dry Fruit Pootharekulu": 180
   };
 
   const itemDisplay = document.getElementById("selected-item");
