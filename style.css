@@ -121,6 +121,7 @@ nav {
   object-fit: cover;      /* Makes image crop perfectly without stretching */
   border-radius: 10px;    /* Optional – smooth corners */
   margin-top: 10px;
+  border: 1px groove goldenrod;
 }
 
 .services {
