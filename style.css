@@ -9,8 +9,8 @@
 
 /* ==== GLOBAL ==== */
 body {
-  background:linear-gradient(45 deg,green,white,transparent,purple);
-  color: goldenrod;
+  background:linear-gradient(45 deg,transparent,white,#FFD700);
+  color: #FFD700;
   line-height: 1.6;
 }
 
