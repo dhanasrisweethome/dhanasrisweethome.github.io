@@ -176,6 +176,61 @@ nav {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+/* Gallery container */
+.gallery-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Horizontal scrolling images */
+.images {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+}
+
+.images img {
+  width: 300px;
+  flex: 0 0 auto;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.images img:hover {
+  transform: scale(1.05);
+}
+
+/* Hide scrollbar */
+.images::-webkit-scrollbar {
+  display: none;
+}
+
+/* Arrow buttons */
+.scroll-btn {
+  position: absolute;
+  background: gold;
+  border: none;
+  font-size: 25px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.scroll-btn:hover {
+  background: orange;
+}
+
+.left {
+  left: -10px;
+}
+
+.right {
+  right: -10px;
+}
 
 /* ==== CONTACT ==== */
 .contact {
