@@ -157,59 +157,73 @@ nav {
 }
 
 /* ==== GALLERY ==== */
+
 .gallery {
-  padding: 80px 10%;
+  padding: 80px 0;   /* remove side padding */
   text-align: center;
 }
 
-/* Gallery container */
+/* main slider container */
 .gallery-container {
   position: relative;
-  display: flex;
-  align-items: center;
-}
-/* Horizontal scrolling images */
-.images {
-  display: flex;
-  flex-wrap: nowrap;      /* important: prevents next line */
-  gap: 20px;
-  overflow-x: auto;       /* horizontal scroll */
-  scroll-behavior: smooth;
-  padding: 20px;
+  width: 100%;
+  overflow: hidden;
 }
 
+/* image row */
+.images {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 40px;
+}
+
+/* images */
 .images img {
   width: 300px;
-  flex: 0 0 auto;         /* prevents shrinking */
+  height: 200px;
+  object-fit: cover;
+  flex-shrink: 0;
   border-radius: 12px;
   transition: transform 0.3s ease;
-}   
-/* Arrow buttons */
-.scroll-btn {
-  position: absolute;
-  background: gold;
-  border: none;
-  font-size: 25px;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 50%;
-  z-index: 10;
 }
+
+.images img:hover {
+  transform: scale(1.05);
+}
+
+/* hide scrollbar */
 .images::-webkit-scrollbar {
   display: none;
 }
+
+/* buttons */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: gold;
+  border: none;
+  font-size: 22px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
 .scroll-btn:hover {
   background: orange;
 }
 
 .left {
-  left: -10px;
+  left: 10px;
 }
 
 .right {
-  right: -10px;
+  right: 10px;
 }
-
 /* ==== CONTACT ==== */
 .contact {
   background: #fff9e6;
