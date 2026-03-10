@@ -9,7 +9,7 @@
 
 /* ==== GLOBAL ==== */
 body {
-  background:linear-gradient(45 deg,transparent,white,#FFD700);
+  background:linear-gradient(45deg,transparent,white,#FFD700);
   color: #FFD700;
   line-height: 1.6;
 }
@@ -24,7 +24,7 @@ h2 {
 
 /* ==== NAVIGATION ==== */
 header {
-  background-image: url("https://github.com/dhanasrisweethome/dhanasrisweethome.github.io/blob/main/Dryfruit.jpg?raw=true");
+background-image: url("https://raw.githubusercontent.com/dhanasrisweethome/dhanasrisweethome.github.io/main/Dryfruit.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
