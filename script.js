@@ -29,3 +29,13 @@ function reveal() {
   }
 }
 
+// ==== gallary scroll====
+function scrollGallery(direction) {
+  const gallery = document.getElementById("galleryImages");
+  const scrollAmount = 320;
+
+  gallery.scrollBy({
+    left: direction * scrollAmount,
+    behavior: "smooth"
+  });
+}
