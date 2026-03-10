@@ -161,53 +161,29 @@ nav {
   padding: 80px 10%;
   text-align: center;
 }
-.images {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.images img {
-  width: 300px;
-  border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.images img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
+
 /* Gallery container */
 .gallery-container {
   position: relative;
   display: flex;
   align-items: center;
 }
-
 /* Horizontal scrolling images */
 .images {
   display: flex;
+  flex-wrap: nowrap;      /* important: prevents next line */
   gap: 20px;
-  overflow-x: auto;
+  overflow-x: auto;       /* horizontal scroll */
   scroll-behavior: smooth;
   padding: 20px;
 }
 
 .images img {
   width: 300px;
-  flex: 0 0 auto;
+  flex: 0 0 auto;         /* prevents shrinking */
   border-radius: 12px;
-  transition: transform 0.3s;
-}
-
-.images img:hover {
-  transform: scale(1.05);
-}
-
-/* Hide scrollbar */
-.images::-webkit-scrollbar {
-  display: none;
-}
-
+  transition: transform 0.3s ease;
+}   
 /* Arrow buttons */
 .scroll-btn {
   position: absolute;
